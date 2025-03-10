@@ -1,4 +1,4 @@
-# Wikipedia CLI App
+# Quick-wiki
 
 A **simple** and interactive **Command-Line Interface (CLI) tool** that allows users to search Wikipedia, retrieve article summaries, and display them in a well-formatted way.
 
