@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 var __createBinding = (this && this.__createBinding) || (Object.create ? (function(o, m, k, k2) {
     if (k2 === undefined) k2 = k;
@@ -64,7 +65,7 @@ function getQuery() {
                         type: "list",
                         name: "action",
                         message: "What do you want to do?",
-                        choices: ["Search Wikipedia", "Exit"], // Explicit exit option
+                        choices: ["Search Wikipedia", "Exit"], // Explicit exit
                     },
                 ]);
                 if (action.action === "Exit") {
@@ -88,7 +89,7 @@ function getQuery() {
                 }
             }
             else {
-                return program.args[0]; // Use provided argument
+                return program.args[0];
             }
         }
     });
@@ -142,7 +143,7 @@ function fetchWikiSummary(pageId) {
             else {
                 console.log("\n" + chalk_1.default.bgBlue.white.bold(" Wikipedia Summary ") + "\n");
                 console.log(chalk_1.default.bgBlue.white.bold("-------------------"));
-                console.log(chalk_1.default.bgWhite.black(summaryText)); // ✅ Styled summary
+                console.log(chalk_1.default.bgWhite.black(summaryText));
                 console.log("\n" +
                     chalk_1.default.bgBlack.white.bold(" Source: ") +
                     chalk_1.default.blue(`https://en.wikipedia.org/?curid=${pageId}`));
