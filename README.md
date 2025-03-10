@@ -14,7 +14,7 @@ A **simple** and interactive **Command-Line Interface (CLI) tool** that allows u
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/wikipedia-cli-app.git
+   git clone https://github.com/SinanIR/quick-wiki-cli.git
    cd wikipedia-cli-app
    ```
 2. Install dependencies:
